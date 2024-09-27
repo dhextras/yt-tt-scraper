@@ -4,7 +4,9 @@ Account scraper for YouTube and TikTok based on a wide range of specific criteri
 
 ## Live Demo
 
-[YouTube and TikTok Scraper Live](https://dhextras-yts.glitch.me/)
+[YouTube and TikTok Scraper Live](https://dhextras-yt-search.glitch.me/)
+
+> Above is v1 though cause glitch doesnt support node 18 here is how the v2 looks like
 
 ![Webpage Screenshot](https://github.com/dhextras/ReadMe/blob/main/images/yts-web.png)
 
