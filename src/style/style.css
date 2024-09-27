@@ -1,0 +1,212 @@
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode #resultDiv {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.dark-mode #log {
+  background-color: #444;
+}
+
+.dark-mode a:-webkit-any-link {
+  color: aqua;
+}
+
+.dark-mode #potentialDiv,
+.dark-mode #selectedDiv {
+  background-color: #444;
+}
+
+.dark-mode #potentialList li,
+.dark-mode #selectedList li {
+  border: 2px solid #444;
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
+
+.dark-mode #channelDiv {
+  background-color: #222;
+}
+
+.dark-mode .popup-content {
+  background-color: #535151;
+}
+
+.dark-mode .popup-content h2 {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .popup {
+  background-color: rgba(83, 83, 83, 0.5);
+}
+
+.dark-mode .popup-content button {
+  background-color: rgb(1, 1, 1);
+}
+
+#channelNumberDiv {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+}
+
+#channelNumber,
+#quotaNumber {
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 2px 5px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 1px 5px;
+}
+
+button:hover {
+  background-color: #b7b7b7;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#topBar {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.popup-content {
+  background-color: #ddd;
+  padding: 20px;
+  width: 60%;
+  min-height: 30%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content input,
+.popup-content button {
+  margin: 12px;
+}
+
+#resultDiv {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font: 700;
+  margin: 10px auto;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  max-height: 77vh;
+}
+
+#log {
+  background-color: rgb(108, 108, 108);
+  color: aliceblue;
+  width: 99%;
+  font-size: 13px;
+  padding: 0.6%;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-height: 14px;
+}
+
+#potentialDiv,
+#selectedDiv {
+  gap: 8px;
+  flex-direction: column;
+  display: none;
+  width: 100%;
+  font-size: 13px;
+  padding: 1%;
+  min-height: 80vh;
+}
+
+#potentialList,
+#selectedList {
+  padding: 0;
+  width: 98%;
+  display: flex;
+  border-radius: 10px;
+  gap: 10px;
+  overflow: auto;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#potentialList li > *,
+#selectedList li > * {
+  flex: 1;
+  padding-left: 10px;
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#potentialList li,
+#selectedList li {
+  align-items: center;
+  padding: 2px;
+  border: 2px solid #989898;
+  border-radius: 10px;
+  display: flex;
+}
+
+#potentialList li:hover,
+#selectedList li:hover {
+  border-color: rgb(53, 147, 236);
+  padding: 4px;
+}
+
+#potentialList::-webkit-scrollbar,
+#selectedList::-webkit-scrollbar,
+#channelDiv::-webkit-scrollbar {
+  display: none;
+}
+
+#channelDiv {
+  height: 80vh;
+  background-color: rgb(238, 236, 236);
+  overflow-x: hidden;
+}

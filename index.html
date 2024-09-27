@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT/TT Channel Finder</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
+    <div id="topBar">
+      <button id="platformToggle" onclick="togglePlatform()">
+        YouTube / TikTok
+      </button>
+      <button id="youtubeModeToggle" onclick="toggleYoutubeMode()">
+        Shorts / Videos
+      </button>
+      <select id="keywordOptions">
+        <option value="keywords_yt">Keyword yt</option>
+        <option value="keywords_tt">Keyword tt</option>
+        <option value="keywords_long_yt">Keyword Long yt</option>
+        <option value="keywords_short_yt">Keyword Short yt</option>
+      </select>
+      <select id="keywordSelect"></select>
+      <button id="searchButton">Search</button>
+      <button id="stopYTSearch" style="display: none">Stop YT Search</button>
+      <button
+        id="extractTTVideos"
+        style="display: none"
+        onclick="extractTTVideos()"
+      >
+        Extract TT Videos
+      </button>
+      <button
+        id="processTTChannels"
+        style="display: none"
+        onclick="processTTChannels()"
+      >
+        Process TT Channels
+      </button>
+      <button id="potentialChannelsButton" onclick="toggleDivs(true)">
+        Potential channels
+      </button>
+      <button id="selectChannelsButton" onclick="toggleDivs(false)">
+        Select channels
+      </button>
+      <button id="excludedChannelsButton" onclick="excludeChannels()">
+        Exclude channels
+      </button>
+      <button
+        id="generateSelectedChannelsButton"
+        onclick="generateSelectedChannels()"
+      >
+        Selected CSV
+      </button>
+      <button id="addToExistingButton" onclick="addToExisting()">
+        Add to Existing
+      </button>
+      <button
+        id="generateKeywordAndChannelsButton"
+        onclick="generateKeywordAndChannels()"
+      >
+        Generate Data
+      </button>
+      <button
+        id="openPotentialButton"
+        onclick="openChannels('#potentialList li')"
+      >
+        Open Potential
+      </button>
+      <button
+        id="openPotentialButton"
+        onclick="openChannels('#selectedList li')"
+      >
+        Open Selected
+      </button>
+      <button id="darkModeButton" onclick="toggleDarkMode()">Dark Mode</button>
+      <div id="channelNumberDiv">
+        <div id="channelNumber"></div>
+        <div id="quotaNumber"></div>
+      </div>
+    </div>
+    <div id="resultDiv">
+      <div id="log">console Log here</div>
+      <div
+        style="height: 80vh; background-color: rgb(238, 236, 236)"
+        id="channelDiv"
+      >
+        <div id="potentialDiv">
+          <ul id="potentialList"></ul>
+        </div>
+        <div id="selectedDiv">
+          <ul id="selectedList"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
